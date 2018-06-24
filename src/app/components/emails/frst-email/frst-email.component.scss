@@ -1,0 +1,41 @@
+#assinatura {
+  	margin-bottom: 26px;			
+  	color: rgb(34, 34, 34); 
+  	font-family: arial, sans-serif; 
+  	font-size: 12.8px; 
+    font-style: normal;
+      table {
+        font-size: 12.8px;
+        color: rgb(136, 136, 136);
+        table-layout: fixed; 
+        border-collapse: collapse; 
+        border: 1px solid rgb(204, 204, 204);
+        tbody tr {
+            height: 48px;
+            td {
+                font-family: arial, sans-serif;
+                margin: 0px; 
+                padding: 2px 3px;
+                border-top: 1px solid rgb(255, 255, 255);
+                border-left: 1px solid rgb(255, 255, 255); 
+                border-right: 1px solid rgb(255, 255, 255); 
+                border-bottom: 1px solid rgb(255, 255, 255);
+            }
+        }
+    }
+  
+  }
+
+p{
+    margin: 2.5px;
+}
+
+#divSubj{
+    padding-top: 14px;
+    padding-left: 10px;
+    font-family: 'PT Mono', monospace;
+}
+
+#inpt_url_site{
+    font-family: 'PT Mono', monospace;
+}

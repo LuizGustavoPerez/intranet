@@ -1,0 +1,25 @@
+[
+    {
+        "timezone": "UTC -5:00"
+    },{
+        "timezone": "UTC -4:00"
+    },{
+        "timezone": "UTC -3:00"
+    },{
+        "timezone": "UTC -2:00"
+    },{
+        "timezone": "UTC -1:00"
+    },{
+        "timezone": "UTC 0:00"
+    },{
+        "timezone": "UTC +1:00"
+    },{
+        "timezone": "UTC +2:00"
+    },{
+        "timezone": "UTC +3:00"
+    },{
+        "timezone": "UTC +4:00"
+    },{
+        "timezone": "UTC +5:00"
+    }
+]

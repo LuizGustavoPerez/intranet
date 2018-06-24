@@ -1,0 +1,123 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">1st E-mail</h4>
+                        <p class="card-category"> Tag Implementation </p>
+                    </div>
+                    <div class="card-body" #copyMail>
+                        <div class="row">
+                            <div class="col-sm-1" id="divSubj">
+                                <b>Subject:</b>
+                            </div>
+                            <div class="col-md-11">
+                                <mat-form-field class="example-full-width">
+                                    <input id="inpt_url_site" matInput type="text" [(ngModel)]="urlWeb" (focus)="selecionaTexto($event)">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <p>Olá {{ clientName }},</p>
+                        <p>Meu nome é {{ agentName }}, faço parte da Equipe de Implementação do Google, tudo bem?</p>
+                        <p>Eu trabalho com {{ accountManager }}, estrategista da sua Conta do Google, e estou aqui para ajudar
+                            você a instalar o código de {{ typeImp }} no seu website. Para iniciarmos a configuração, ligarei
+                            para você na {{ dateImp | date:"EEEE',' dd 'de' MMMM 'de' yyyy":'':'pt' }}, às {{ timeImp }}
+                            ({{ timeZone }}), conforme pré agendado pelo seu estrategista.</p>
+                        <p>Eu irei ligar no número de telefone: {{ phoneCliente }}.</p>
+                        <br>
+                        <p>Nesta chamada, faremos uma sessão com compartilhamento de tela para analisarmos seu website juntos,
+                            depois, orientarei você passo a passo para inserir o código de {{ typeImp }} no seu site e realizaremos
+                            todos os testes para verificar que tudo está funcionando corretamente.</p>
+                        <p>Importante! Antes da nossa conversa:</p>
+                        <ul>
+                            <li>Confirme sua disponibilidade na {{ dateImp | date:"EEEE',' dd 'de' MMMM 'de' yyyy":'':'pt' }}
+                                às {{ timeImp }} respondendo a este e-mail. Em caso negativo, poderemos reagendar a chamada;</li>
+                            <li>Verifique se você tem acesso
+                                <b>administrativo ao código fonte</b> do seu site. (Para isso, você precisa ter as credenciais
+                                do FTP ou do painel de administração). Caso contrário, convide seu webmaster para participar
+                                da chamada. Se você não tiver acesso ao site e seu webmaster não estiver disponível, teremos
+                                que reagendar a chamada. Para isso, basta responder a este e-mail e me informar.);</li>
+                            <li>
+                                <b>Faça um backup</b> do seu website (altamente recomendável).</li>
+                        </ul>
+                        <p>Será um prazer falar com você na {{ dateImp | date:"EEEE',' dd 'de' MMMM 'de' yyyy":'':'pt' }}, às
+                            {{ timeImp }} ({{ timeZone }})! </p>
+                        <p>Atenciosamente,</p>
+                        <div id="assinatura">
+                            <!--Assinatura-->
+                            <table cellspacing="0" cellpadding="0" dir="ltr" border="1">
+                                <tbody>
+                                    <tr>
+                                        <td id="td1">
+                                            <img src="https://ci5.googleusercontent.com/proxy/fWC945f6GqZaSrK0fNVesmD8_0ZssIyks6gHf7ipOoSSQIRH00sknlBUfeZeyzS2M5ZqyQ=s0-d-e1-ft#http://i.imgur.com/Ya4Rhss.gif"
+                                                width="200" height="90">
+                                            <br>
+                                        </td>
+                                        <td id="td2">
+                                            <blockquote style="margin: 0px 0px 0px 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;">
+                                                <font size="2">
+                                                    <font face="tahoma, sans-serif">
+                                                        <b style="color: rgb(61, 133, 198);">&nbsp;</b>
+                                                        <b style="color: rgb(61, 133, 198);">&nbsp;• &nbsp;</b>
+                                                        <b style="color: rgb(34, 34, 34); line-height: 15.36px;">
+                                                            <span style="vertical-align: baseline; white-space: pre-wrap;">
+                                                                <font color="#666666" style="font-size: 12px;">{{ agentName }}</font>
+                                                            </span>
+                                                        </b>
+                                                        <font color="#3d85c6">
+                                                            <b>
+                                                                <br>
+                                                            </b>
+                                                        </font>
+                                                        <b style="color: rgb(255, 0, 0);">&nbsp; •</b>
+                                                        <span style="color: rgb(255, 0, 0);">&nbsp;&nbsp;</span>
+                                                        <span style="line-height: 16px; white-space: pre-wrap;">
+                                                            <font color="#999999">Optimization Specialist</font>
+                                                        </span>
+                                                        <font color="#ff0000">
+                                                            <b>
+                                                                <br>
+                                                            </b>
+                                                        </font>
+                                                        <b style="color: rgb(255, 204, 51);">
+                                                            <a style="color: rgb(34, 34, 34);"></a>&nbsp; •&nbsp;</b>
+                                                        <font color="#ffcc33" style="line-height: 16px; white-space: pre-wrap; font-weight: bold;">&nbsp;</font>
+                                                    </font>
+                                                    <font color="#1155cc" face="sans-serif">
+                                                        <u>
+                                                            <a href="mailto:	imization-support-pt@google.com" target="_blank" style="color: rgb(17, 85, 204);">website-optimization-suppor<wbr>t-pt@google.com</a>
+                                                        </u>
+                                                    </font>
+                                                    <span style="color: rgb(85, 85, 85); font-family: sans-serif;">&nbsp;</span>
+                                                    <font face="tahoma, sans-serif">
+                                                        <font color="#3d85c6">
+                                                            <b>
+                                                                <br>
+                                                            </b>
+                                                        </font>
+                                                        <span style="color: rgb(106, 168, 79); font-weight: bold;">&nbsp; •</span>
+                                                        <font color="#666666">&nbsp;</font>
+                                                        <span style="line-height: 1.2; color: rgb(61, 133, 198); font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">&nbsp;</span>
+                                                    </font>
+                                                </font>
+                                                <span style="font-size: 12.8px;" id="foo">Google Inc.</span>
+                                            </blockquote>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--Assinatura Fechamento-->
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <button mat-raised-button class="btn btn-info" (click)="copiaEmail(copyMail)">Copiar</button>
+                            </div>
+                            <div class="col-sm-10"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
