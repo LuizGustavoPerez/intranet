@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Renderer, ElementRef } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
@@ -90,18 +90,10 @@ export class FrstEmailComponent implements OnInit {
     $event.target.select();
   }
 
-  copiaEmail(divCop) {
-    //função do botão copiar
-    let selBox = document.createElement('textarea');
-    /*selBox.style.position = 'fixed';
-    selBox.style.left = '0';
-    selBox.style.top = '0';
-    selBox.style.opacity = '0';*/
-    selBox.innerHTML = divCop.innerHTML;
-    document.body.appendChild(selBox);
-    selBox.focus();
-    selBox.select();
-    document.execCommand('copy');
-    //document.body.removeChild(selBox);
+  copiaEmail(divEl,emptDiv){
+    window.getSelection().selectAllChildren(divEl);
+		document.execCommand('copy');	
+		window.getSelection().selectAllChildren(emptDiv);
   }
+
 }
