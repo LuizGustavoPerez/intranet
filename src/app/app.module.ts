@@ -10,7 +10,6 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { ClipboardDirective } from './components/emails/clipboard.directive';
 
 
 registerLocaleData(localePt);
@@ -26,8 +25,7 @@ registerLocaleData(localePt);
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent,
-    ClipboardDirective
+    AdminLayoutComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

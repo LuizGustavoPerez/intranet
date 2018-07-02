@@ -1,4 +1,3 @@
-import { ClipboardDirective } from './clipboard.directive';
 import { HttpModule } from '@angular/http';
 import { InputCasesComponent } from './input-cases/input-cases.component';
 import { NgModule } from '@angular/core';
